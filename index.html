@@ -354,7 +354,8 @@
           Παρακαλούμε συμπληρώστε τα αντίστοιχα τετραγωνίδια για να δηλώσετε
           συναίνεση
         </h3>
-        <form action="https://fabform.io/f/efaBzLM" method="post">
+        <form data-netlify="true" method="post">
+          <!-- <form action="https://fabform.io/f/efaBzLM" method="post"> -->
           <table class="tbl border_bottom">
             <tr>
               <td>
@@ -364,10 +365,10 @@
                 με ικανοποιητικό τρόπο.
               </td>
               <td>
-                <label> <input type="radio" name="radio1" />ΝΑΙ </label>
+                <label> <input type="radio" name="r1" />ΝΑΙ </label>
               </td>
               <td>
-                <label> <input type="radio" name="radio1" />ΟΧΙ </label>
+                <label> <input type="radio" name="r1" />ΟΧΙ </label>
               </td>
             </tr>
             <tr>
@@ -376,10 +377,10 @@
                 18 έως 25 ετών.
               </td>
               <td>
-                <label> <input type="radio" name="radio2" />ΝΑΙ </label>
+                <label> <input type="radio" name="r2" />ΝΑΙ </label>
               </td>
               <td>
-                <label> <input type="radio" name="radio2" />ΟΧΙ </label>
+                <label> <input type="radio" name="r2" />ΟΧΙ </label>
               </td>
             </tr>
             <tr>
@@ -389,10 +390,10 @@
                 τον λόγο.
               </td>
               <td>
-                <label> <input type="radio" name="radio3" />ΝΑΙ </label>
+                <label> <input type="radio" name="r3" />ΝΑΙ </label>
               </td>
               <td>
-                <label> <input type="radio" name="radio3" />ΟΧΙ </label>
+                <label> <input type="radio" name="r3" />ΟΧΙ </label>
               </td>
             </tr>
             <tr>
@@ -402,10 +403,10 @@
                 ενημερωτικό φυλλάδιο.
               </td>
               <td>
-                <label><input type="radio" name="radio4" /> ΝΑΙ </label>
+                <label><input type="radio" name="r4" /> ΝΑΙ </label>
               </td>
               <td>
-                <label><input type="radio" name="radio4" /> ΟΧΙ </label>
+                <label><input type="radio" name="r4" /> ΟΧΙ </label>
               </td>
             </tr>
             <tr>
@@ -415,10 +416,10 @@
                 ή ερευνητικής αναφοράς.
               </td>
               <td>
-                <label> <input type="radio" name="radio5" />ΝΑΙ </label>
+                <label> <input type="radio" name="r5" />ΝΑΙ </label>
               </td>
               <td>
-                <label> <input type="radio" name="radio5" />ΟΧΙ </label>
+                <label> <input type="radio" name="r5" />ΟΧΙ </label>
               </td>
             </tr>
             <tr>
@@ -426,10 +427,10 @@
                 Δίνω την συγκατάθεσή μου να συμμετάσχω σε αυτή την έρευνα.
               </td>
               <td>
-                <label> <input type="radio" name="radio6" />ΝΑΙ </label>
+                <label> <input type="radio" name="r6" />ΝΑΙ </label>
               </td>
               <td>
-                <label> <input type="radio" name="radio6" />ΟΧΙ </label>
+                <label> <input type="radio" name="r6" />ΟΧΙ </label>
               </td>
             </tr>
           </table>
@@ -438,40 +439,32 @@
               <td colspan="2">
                 <label>
                   <div>Ονοματεπώνυμο συμμετέχοντος:</div>
-                  <input type="text" name="nameParticipant"
+                  <input type="text" name="namePart"
                 /></label>
               </td>
             </tr>
             <tr>
               <td>
-                <label
-                  >Υπογραφή <input type="text" name="signParticipant"
-                /></label>
+                <label>Υπογραφή <input type="text" name="signPart" /></label>
               </td>
               <td>
-                <label
-                  >Ημερομηνία <input type="date" name="dateParticipant"
-                /></label>
+                <label>Ημερομηνία <input type="date" name="datePart" /></label>
               </td>
             </tr>
             <tr>
               <td colspan="2">
                 <label>
                   <div>Ονοματεπώνυμο ερευνητή:</div>
-                  <input type="text" name="nameResearcher"
+                  <input type="text" name="nameRes"
                 /></label>
               </td>
             </tr>
             <tr>
               <td>
-                <label
-                  >Υπογραφή <input type="text" name="signResearcher"
-                /></label>
+                <label>Υπογραφή <input type="text" name="signRes" /></label>
               </td>
               <td>
-                <label
-                  >Ημερομηνία<input type="date" name="dateResearcher"
-                /></label>
+                <label>Ημερομηνία<input type="date" name="dateRes" /></label>
               </td>
             </tr>
           </table>
