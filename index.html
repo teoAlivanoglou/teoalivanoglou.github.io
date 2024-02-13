@@ -30,6 +30,8 @@
       .form {
         display: grid;
         grid-template-columns: 1fr fit-content(100%) fit-content(100%);
+        gap: 0 1ch;
+        padding: 0 1ch;
         margin-bottom: 1rem;
       }
       .form > hr {
@@ -591,6 +593,8 @@
             customClass: {
               confirmButton: "popup-button",
             },
+
+            toast: true,
           })
         )
         .catch((error) =>
@@ -599,6 +603,8 @@
             customClass: {
               confirmButton: "popup-button",
             },
+
+            toast: true,
           })
         );
     };
