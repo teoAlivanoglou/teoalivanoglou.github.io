@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Πληροφόρηση</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css-1.7.1.min.css"
@@ -11,6 +13,21 @@
       body {
         padding: 18px 9px;
       }
+
+      .popup-button {
+        background-color: #275a90 !important;
+        color: #fff !important;
+        border: 0;
+        padding: 0.4078125rem 1.4625rem;
+        margin-right: 0.45rem;
+        margin-bottom: 1.125rem;
+      }
+
+      .popup-button:hover {
+        background-color: #173454 !important;
+        color: #bfbfbf !important;
+      }
+
       .tbl {
         width: 100%;
         border-collapse: collapse;
@@ -19,7 +36,6 @@
       .border_bottom > tbody > tr {
         border-bottom: 1px solid black;
       }
-
       .border_all > tbody > tr {
         display: flex;
         flex-flow: wrap;
@@ -499,8 +515,17 @@
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
       })
-        .then(() => alert("Thank you for your submission"))
-        .catch((error) => alert(error));
+        .then(() => Swal.fire("Ευχαριστούμε για την απάντηση"))
+        .catch((error) =>
+          Swal.fire({
+            titleText: "Ευχαριστούμε για την απάντηση@@",
+            customClass: {
+              confirmButton: "popup-button",
+            },
+
+            toast: true,
+          })
+        );
     };
 
     document.querySelector("form").addEventListener("submit", handleSubmit);
