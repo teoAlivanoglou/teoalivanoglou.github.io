@@ -515,10 +515,19 @@
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
       })
-        .then(() => Swal.fire("Ευχαριστούμε για την απάντηση"))
+        .then(() =>
+          Swal.fire({
+            titleText: "Ευχαριστούμε για την απάντηση",
+            customClass: {
+              confirmButton: "popup-button",
+            },
+
+            toast: true,
+          })
+        )
         .catch((error) =>
           Swal.fire({
-            titleText: "Ευχαριστούμε για την απάντηση@@",
+            titleText: "Κάτι πήγε στραβά",
             customClass: {
               confirmButton: "popup-button",
             },
