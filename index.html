@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Πληροφόρηση</title>
+    <title>Πληροφόρηση & Ενήμερη Συναίνεση</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link
       rel="stylesheet"
@@ -411,27 +411,24 @@
             τρόπο.
           </p>
 
-          <label> <input type="radio" name="r01" />ΝΑΙ </label>
-
-          <label> <input type="radio" name="r01" />ΟΧΙ </label>
+          <label> <input type="radio" name="r01" value="Yes"/>ΝΑΙ </label>
+          <label> <input type="radio" name="r01" value="No"/>ΟΧΙ </label>
 
           <hr />
           <p>
             Επιβεβαιώνω ότι είμαι προπτυχιακός/μεταπτυχιακός φοιτητής/τρια 18
             έως 25 ετών.
           </p>
-          <label> <input type="radio" name="r02" />ΝΑΙ </label>
-
-          <label> <input type="radio" name="r02" />ΟΧΙ </label>
+          <label> <input type="radio" name="r02" value="Yes"/>ΝΑΙ </label>
+          <label> <input type="radio" name="r02" value="No"/>ΟΧΙ </label>
           <hr />
 
           <p>
             Γνωρίζω ότι η συμμετοχή μου στην έρευνα είναι εθελοντική και είμαι
             ελεύθερος/η να αποσυρθώ όποια στιγμή θέλω χωρίς να εξηγήσω τον λόγο.
           </p>
-          <label> <input type="radio" name="r03" />ΝΑΙ </label>
-
-          <label> <input type="radio" name="r03" />ΟΧΙ </label>
+          <label> <input type="radio" name="r03" value="Yes"/>ΝΑΙ </label>
+          <label> <input type="radio" name="r03" value="No"/>ΟΧΙ </label>
           <hr />
 
           <p>
@@ -439,9 +436,8 @@
             δεδομένων για ερευνητικούς σκοπούς, όπως περιγράφονται στο
             ενημερωτικό φυλλάδιο.
           </p>
-          <label><input type="radio" name="r04" /> ΝΑΙ </label>
-
-          <label><input type="radio" name="r04" /> ΟΧΙ </label>
+          <label><input type="radio" name="r04" value="Yes"/> ΝΑΙ </label>
+          <label><input type="radio" name="r04" value="No"/> ΟΧΙ </label>
           <hr />
 
           <p>
@@ -449,94 +445,14 @@
             να δημοσιευτούν, πχ. ως μέρος ενός ακαδημαϊκού άρθρου ή ερευνητικής
             αναφοράς.
           </p>
-          <label> <input type="radio" name="r05" />ΝΑΙ </label>
-
-          <label> <input type="radio" name="r05" />ΟΧΙ </label>
+          <label> <input type="radio" name="r05" value="Yes"/>ΝΑΙ </label>
+          <label> <input type="radio" name="r05" value="No"/>ΟΧΙ </label>
           <hr />
 
           <p>Δίνω την συγκατάθεσή μου να συμμετάσχω σε αυτή την έρευνα.</p>
-          <label> <input type="radio" name="r06" />ΝΑΙ </label>
-
-          <label> <input type="radio" name="r06" />ΟΧΙ </label>
+          <label> <input type="radio" name="r06" value="Yes" />ΝΑΙ </label>
+          <label> <input type="radio" name="r06" value="No"/>ΟΧΙ </label>
         </div>
-
-        <!-- <form action="https://fabform.io/f/efaBzLM" method="post"> -->
-        <!-- <table class="tbl border_bottom">
-          <tr>
-            <td>
-              Επιβεβαιώνω ότι έχω διαβάσει το ενημερωτικό φυλλάδιο πριν λάβω
-              μέρος στην έρευνα, είχα την ευκαιρία να επεξεργαστώ τις
-              πληροφορίες, να κάνω ερωτήσεις και έχω απαντήσει τις ερωτήσεις με
-              ικανοποιητικό τρόπο.
-            </td>
-            <td>
-              <label> <input type="radio" name="r1" />ΝΑΙ </label>
-            </td>
-            <td>
-              <label> <input type="radio" name="r1" />ΟΧΙ </label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Επιβεβαιώνω ότι είμαι προπτυχιακός/μεταπτυχιακός φοιτητής/τρια 18
-              έως 25 ετών.
-            </td>
-            <td>
-              <label> <input type="radio" name="r2" />ΝΑΙ </label>
-            </td>
-            <td>
-              <label> <input type="radio" name="r2" />ΟΧΙ </label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Γνωρίζω ότι η συμμετοχή μου στην έρευνα είναι εθελοντική και είμαι
-              ελεύθερος/η να αποσυρθώ όποια στιγμή θέλω χωρίς να εξηγήσω τον
-              λόγο.
-            </td>
-            <td>
-              <label> <input type="radio" name="r3" />ΝΑΙ </label>
-            </td>
-            <td>
-              <label> <input type="radio" name="r3" />ΟΧΙ </label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Δίνω την συγκατάθεσή μου στην επεξεργασία των προσωπικών μου
-              δεδομένων για ερευνητικούς σκοπούς, όπως περιγράφονται στο
-              ενημερωτικό φυλλάδιο.
-            </td>
-            <td>
-              <label><input type="radio" name="r4" /> ΝΑΙ </label>
-            </td>
-            <td>
-              <label><input type="radio" name="r4" /> ΟΧΙ </label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Γνωρίζω ότι τα στοιχεία μου που δίνονται κωδικοποιημένα, ενδέχεται
-              να δημοσιευτούν, πχ. ως μέρος ενός ακαδημαϊκού άρθρου ή
-              ερευνητικής αναφοράς.
-            </td>
-            <td>
-              <label> <input type="radio" name="r5" />ΝΑΙ </label>
-            </td>
-            <td>
-              <label> <input type="radio" name="r5" />ΟΧΙ </label>
-            </td>
-          </tr>
-          <tr>
-            <td>Δίνω την συγκατάθεσή μου να συμμετάσχω σε αυτή την έρευνα.</td>
-            <td>
-              <label> <input type="radio" name="r6" />ΝΑΙ </label>
-            </td>
-            <td>
-              <label> <input type="radio" name="r6" />ΟΧΙ </label>
-            </td>
-          </tr>
-        </table> -->
         <table class="tbl border_all">
           <tr>
             <td colspan="2">
@@ -571,7 +487,7 @@
             </td>
           </tr>
         </table>
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Υποβολή" />
       </form>
     </section>
   </body>
