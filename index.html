@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Πληροφόρηση & Ενήμερη Συναίνεση</title>
+    <title>Πληροφόρηση Συμμετεχόντων</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link
       rel="stylesheet"
@@ -13,118 +13,11 @@
       body {
         padding: 9px 0.5ch;
       }
-      .popup-button {
-        background-color: #275a90 !important;
-        color: #fff !important;
-        border: 0;
-        padding: 0.4078125rem 1.4625rem;
-        margin-right: 0.45rem;
-        margin-bottom: 1.125rem;
-      }
-
-      .popup-button:hover {
-        background-color: #173454 !important;
-        color: #bfbfbf !important;
-      }
-
-      .form {
-        display: grid;
-        grid-template-columns: 1fr fit-content(100%) fit-content(100%);
-        gap: 0 1ch;
-        padding: 0 1ch;
-        margin-bottom: 1rem;
-      }
-      .form > hr {
-        grid-column-start: 1;
-        grid-column-end: 4;
-      }
-
-      @media (max-width: 767px) {
-        .form {
-          display: grid;
-          grid-template-columns: fit-content(100%) 1fr;
-        }
-
-        .form > p {
-          grid-column-start: 1;
-          grid-column-end: 3;
-        }
-
-        .form > hr {
-          grid-column-start: 1;
-          grid-column-end: 3;
-        }
-      }
-
-      .tbl {
-        width: 100%;
-        border-collapse: collapse;
-        display: table;
-      }
-      .border_bottom > tbody > tr {
-        border-bottom: 1px solid black;
-      }
-      .border_all > tbody > tr {
-        display: flex;
-        flex-flow: wrap;
-        margin: 0;
-        margin-bottom: -1px;
-        border: 1px solid black;
-      }
-      .border_all > tbody > tr > td {
-        border-bottom: 1px solid black;
-        margin-bottom: -1px;
-        flex-grow: 1;
-      }
-      .tbl > tbody > tr > td {
-        padding: 8px;
-        vertical-align: middle;
-        display: table-cell;
-      }
-      .tbl label {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        flex-flow: wrap;
-      }
-      .tbl label > div {
-        flex-basis: max-content;
-      }
-      .border_all input {
-        flex-grow: 1;
-        flex-shrink: 0;
-        margin-bottom: 4px;
-        margin-top: 4px;
-        margin-left: 1rem;
+      h1 {
+        margin-top: 0;
       }
     </style>
-    <!-- <style>
-      .tbl {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      .border_bottom > tbody > tr {
-        border-bottom: 1px solid black;
-      }
-      .border_all > tbody > tr > td {
-        border: 1px solid black;
-      }
-      .tbl > tbody > tr > td {
-        padding: 8px;
-      }
-      .inlinelbls {
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        grid-gap: 5px;
-      }
-      .inlinelbls > label {
-        text-align: right;
-        vertical-align: bottom;
-      }
-      .tbl input {
-        width: 98%;
-      }
-    </style> -->
+    
   </head>
   <body>
     <section>
@@ -137,31 +30,6 @@
           ένα δείγμα φοιτητών/τριών.
         </p>
       </header>
-    </section>
-    <section>
-      <h3>Ερευνητική ομάδα:</h3>
-      <ul>
-        <li>
-          Αικατερίνη Ιωαννίδου, Μεταπτυχιακή Φοιτήτρια, ΔΠΜΣ «Συμβουλευτική»,
-          ΕΚΠΑ.
-        </li>
-        <li>
-          Ειρήνη Προζυμά, Μεταπτυχιακή Φοιτήτρια, ΔΠΜΣ «Συμβουλευτική», ΕΚΠΑ.
-        </li>
-        <li>
-          Θεόδωρος Γιοβαζολιάς, Καθηγητής Συμβουλευτικής Ψυχολογίας, Τμήμα
-          Ψυχολογίας, Πανεπιστήμιο Κρήτης, Επιστημονικά Υπεύθυνος Προγράμματος.
-        </li>
-        <li>
-          Ευφροσύνη Μητσοπούλου, Λέκτορας Κοινωνικής Ψυχολογίας, Πανεπιστήμιο
-          Swansea, Ουαλία, Ηνωμένο Βασίλειο, Μέλος τριμελούς επιτροπής.
-        </li>
-        <li>
-          Παναγιώτα Δημητροπούλου, Επίκουρη Καθηγήτρια Εκπαιδευτικής Ψυχολογίας,
-          Τμήμα Ψυχολογίας, Πανεπιστήμιο Κρήτης, Μέλος τριμελούς επιτροπής.
-        </li>
-      </ul>
-      <hr />
     </section>
     <section>
       <p>
@@ -265,8 +133,8 @@
             περίπτωση που επιθυμείτε να διαγραφούν τα προσωπικά σας δεδομένα ή
             οι πληροφορίες που θα μας δώσετε μπορείτε να επικοινωνήσετε με τον
             Επιστημονικά Υπεύθυνο του προγράμματος κ. Θεόδωρο Γιοβαζολιά (<a
-              href="mailto:giovazot@uoc.gr"
-              >giovazot@uoc.gr</a
+            href="mailto:giovazot@uoc.gr"
+            >giovazot@uoc.gr</a
             >) δίνοντάς του τον κωδικό σας που έχετε δημιουργήσει (οδηγίες
             διαμόρφωσης του κωδικού θα σας δοθούν στην αρχή της έρευνας).
           </p>
@@ -326,16 +194,16 @@
           <p>
             Για περισσότερες πληροφορίες σχετικά με την έρευνα μπορείτε να
             επικοινωνήσετε με τις ερευνήτριες Αικατερίνη Ιωαννίδου (<a
-              href="mailto:aioanni@uoa.gr"
-              >aioanni@uoa.gr</a
+            href="mailto:aioanni@uoa.gr"
+            >aioanni@uoa.gr</a
             >) ή Ειρήνη Προζυμά (<a href="mailto:eiriniproz@uoa.gr"
-              >eiriniproz@uoa.gr</a
+            >eiriniproz@uoa.gr</a
             >), με τον Επιστημονικά Υπεύθυνο κ. Θεόδωρο Γιοβαζολιά (<a
-              href="mailto:giovazot@uoc.gr"
-              >giovazot@uoc.gr</a
+            href="mailto:giovazot@uoc.gr"
+            >giovazot@uoc.gr</a
             >) ή με τη συνεπόπτρια κ. Ευφροσύνη Μητσοπούλου (<a
-              href="mailto:e.mitsopoulou@swansea.ac.uk"
-              >e.mitsopoulou@swansea.ac.uk</a
+            href="mailto:e.mitsopoulou@swansea.ac.uk"
+            >e.mitsopoulou@swansea.ac.uk</a
             >).
           </p>
         </li>
@@ -345,13 +213,13 @@
             Για οποιαδήποτε παράπονα ή καταγγελίες σχετικά με τη διεξαγωγή της
             έρευνας μπορείτε να προσφύγετε στην Επιτροπή Ηθικής και Δεοντολογίας
             του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών (<a
-              href="mailto:resethic@uoa.gr"
-              >resethic@uoa.gr</a
+            href="mailto:resethic@uoa.gr"
+            >resethic@uoa.gr</a
             >). Για οποιαδήποτε καταγγελία σχετικά με τη διαχείριση των
             προσωπικών σας δεδομένων μπορείτε να απευθύνεστε στην Υπεύθυνη
             Επεξεργασίας Προσωπικών Δεδομένων του ΕΚΠΑ (<a
-              href="mailto:dpo@uoa.gr"
-              >dpo@uoa.gr</a
+            href="mailto:dpo@uoa.gr"
+            >dpo@uoa.gr</a
             >) και σε κάθε περίπτωση στην Αρχή Προστασίας Δεδομένων Προσωπικού
             Χαρακτήρα (<a href="mailto:complaints@dpa.gr">complaints@dpa.gr</a
             >).
@@ -359,23 +227,14 @@
         </li>
       </ol>
     </section>
+
     <section>
       <header>
-        <h1>Έντυπο ενήμερης συναίνεσης</h1>
+        <h1>Ερευνητική ομάδα:</h1>
         <hr />
-        <p style="font-weight: normal">
-          <b style="font-weight: bold">Τίτλος:</b>
-          Διερεύνηση προστατευτικών και επιβαρυντικών παραγόντων της μοναξιάς σε
-          ένα δείγμα φοιτητών/τριών.
-        </p>
-      </header>
-    </section>
-    <section>
-      <h3>Ερευνητική ομάδα:</h3>
       <ul>
         <li>
-          Αικατερίνη Ιωαννίδου, Μεταπτυχιακή Φοιτήτρια, ΔΠΜΣ «Συμβουλευτική»,
-          ΕΚΠΑ.
+          Αικατερίνη Ιωαννίδου, Μεταπτυχιακή Φοιτήτρια, ΔΠΜΣ «Συμβουλευτική», ΕΚΠΑ.
         </li>
         <li>
           Ειρήνη Προζυμά, Μεταπτυχιακή Φοιτήτρια, ΔΠΜΣ «Συμβουλευτική», ΕΚΠΑ.
@@ -393,138 +252,9 @@
           Τμήμα Ψυχολογίας, Πανεπιστήμιο Κρήτης, Μέλος τριμελούς επιτροπής.
         </li>
       </ul>
-      <hr />
+      </header>
     </section>
 
-    <section>
-      <h3>
-        Παρακαλούμε συμπληρώστε τα αντίστοιχα τετραγωνίδια για να δηλώσετε
-        συναίνεση
-      </h3>
-
-      <form data-netlify="true" method="post" name="entry">
-        <div class="form">
-          <p>
-            Επιβεβαιώνω ότι έχω διαβάσει το ενημερωτικό φυλλάδιο πριν λάβω μέρος
-            στην έρευνα, είχα την ευκαιρία να επεξεργαστώ τις πληροφορίες, να
-            κάνω ερωτήσεις και έχω απαντήσει τις ερωτήσεις με ικανοποιητικό
-            τρόπο.
-          </p>
-
-          <label> <input type="radio" name="r01" value="Yes"/>ΝΑΙ </label>
-          <label> <input type="radio" name="r01" value="No"/>ΟΧΙ </label>
-
-          <hr />
-          <p>
-            Επιβεβαιώνω ότι είμαι προπτυχιακός/μεταπτυχιακός φοιτητής/τρια 18
-            έως 25 ετών.
-          </p>
-          <label> <input type="radio" name="r02" value="Yes"/>ΝΑΙ </label>
-          <label> <input type="radio" name="r02" value="No"/>ΟΧΙ </label>
-          <hr />
-
-          <p>
-            Γνωρίζω ότι η συμμετοχή μου στην έρευνα είναι εθελοντική και είμαι
-            ελεύθερος/η να αποσυρθώ όποια στιγμή θέλω χωρίς να εξηγήσω τον λόγο.
-          </p>
-          <label> <input type="radio" name="r03" value="Yes"/>ΝΑΙ </label>
-          <label> <input type="radio" name="r03" value="No"/>ΟΧΙ </label>
-          <hr />
-
-          <p>
-            Δίνω την συγκατάθεσή μου στην επεξεργασία των προσωπικών μου
-            δεδομένων για ερευνητικούς σκοπούς, όπως περιγράφονται στο
-            ενημερωτικό φυλλάδιο.
-          </p>
-          <label><input type="radio" name="r04" value="Yes"/> ΝΑΙ </label>
-          <label><input type="radio" name="r04" value="No"/> ΟΧΙ </label>
-          <hr />
-
-          <p>
-            Γνωρίζω ότι τα στοιχεία μου που δίνονται κωδικοποιημένα, ενδέχεται
-            να δημοσιευτούν, πχ. ως μέρος ενός ακαδημαϊκού άρθρου ή ερευνητικής
-            αναφοράς.
-          </p>
-          <label> <input type="radio" name="r05" value="Yes"/>ΝΑΙ </label>
-          <label> <input type="radio" name="r05" value="No"/>ΟΧΙ </label>
-          <hr />
-
-          <p>Δίνω την συγκατάθεσή μου να συμμετάσχω σε αυτή την έρευνα.</p>
-          <label> <input type="radio" name="r06" value="Yes" />ΝΑΙ </label>
-          <label> <input type="radio" name="r06" value="No"/>ΟΧΙ </label>
-        </div>
-        <table class="tbl border_all">
-          <tr>
-            <td colspan="2">
-              <label>
-                <div>Ονοματεπώνυμο συμμετέχοντος:</div>
-                <input type="text" name="namePart"
-              /></label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label>Υπογραφή <input type="text" name="signPart" /></label>
-            </td>
-            <td>
-              <label>Ημερομηνία <input type="date" name="datePart" /></label>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <label>
-                <div>Ονοματεπώνυμο ερευνητή:</div>
-                <input type="text" name="nameRes"
-              /></label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <label>Υπογραφή <input type="text" name="signRes" /></label>
-            </td>
-            <td>
-              <label>Ημερομηνία<input type="date" name="dateRes" /></label>
-            </td>
-          </tr>
-        </table>
-        <input type="submit" value="Υποβολή" />
-      </form>
-    </section>
   </body>
-  <script>
-    const handleSubmit = (event) => {
-      event.preventDefault();
-
-      const myForm = event.target;
-      const formData = new FormData(myForm);
-
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() =>
-          Swal.fire({
-            titleText: "Ευχαριστούμε για την απάντηση",
-            customClass: {
-              confirmButton: "popup-button",
-            },
-
-            toast: true,
-          })
-        )
-        .catch((error) =>
-          Swal.fire({
-            titleText: "Κάτι πήγε στραβά",
-            customClass: {
-              confirmButton: "popup-button",
-            },
-
-            toast: true,
-          })
-        );
-    };
-
-    document.querySelector("form").addEventListener("submit", handleSubmit);
-  </script>
+  
 </html>
